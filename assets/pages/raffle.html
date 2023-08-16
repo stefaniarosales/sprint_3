@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Snowy Cream - Raffle</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <a href="/index.html">HOME</a>
+            <a href="./aboutUs.html">ABOUT US</a>
+            <a href="./contac.html">CONTACT</a>
+            <a href="./information.html">INFORMATION</a>
+            <a href="./benefits.html">BENEFITS</a>
+            <a href="#">RAFFLE</a>
+        </nav>
+        <img src="/assets/images/logo.png" alt="logo">
+    </header>
+    <main id="main" >
+        <h1 class="titulo-raffle">Raffle</h1>
+        <h2 class="subtitulo">You can collaborate so that we expand the business and by doing so you will be participating in
+        the raffle for a box of traditional ice creams</h2>
+        <div class="contenedor" >
+            <div>
+                <p>Our location is located at:</p>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211597.06444251406!2d-118.49571245401167!3d34.038634428691786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7cee1da17a1%3A0x94ebdb835fa39980!2sVan%20Leeuwen%20Ice%20Cream!5e0!3m2!1ses!2sar!4v1689890938438!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="./show_data.html">
+                <fieldset class="column">
+                    <label for="FirstName">First Name</label>
+                    <input type="text" id="FirstName" placeholder=" Jhon" name="FirstName" required>
+
+                    <label for="LastName">Last Name</label>
+                    <input type="text" id="LastName" placeholder=" Doe" name="LastName" required>
+
+                    <label for="seleccion">Choose Meet or Zoom</label>
+                    <select name="medios" id="seleccion" required>
+                        <option value="">--selecciona una opcion--</option>
+                        <option value="Zoom">Zoom</option>
+                        <option value="Meet">Meet</option>
+                    </select>
+
+                    <label for="seleccion2">Choose Date</label>
+                    <select name="fecha" id="seleccion2" required>
+                        <option value="">--selecciona una opcion--</option>
+                        <option value="20/10">20/10</option>
+                        <option value="27/10">27/10</option>
+                        <option value="21/11">21/11</option>
+                    </select>
+                </fieldset>
+                <fieldset class="column" >
+                    <legend>Payment Options</legend>
+                    <label class="pagos" for="pago"><input type="radio" id="pago" value="Cash" name="pagos" required> Cash</label>
+                    <label class="pagos" for="pago1"><input type="radio" id="pago1" value="CreditCard" name="pagos" required> Credit Card</label>
+                    <label class="pagos" for="pago2"><input type="radio" id="pago2" name="pagos" value="DebitCard" required> Debit Card</label>
+                </fieldset>
+                <fieldset class="column">
+                    <legend>Message (Optional)</legend>
+                    <textarea name="mensage" cols="30" rows="10" ></textarea>
+                </fieldset>
+                <fieldset class="enviar">
+                    <label for="chek"><input type="checkbox" id="chek" value="accept" name="termsAndConditions" required > I accept terms and conditions</label>
+                    <input class="boton" type="submit" value="Send">
+                </fieldset> 
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Created by : Stefania Rosales 2023</p>
+    </footer>
+</body>
+</html>
